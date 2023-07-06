@@ -13,7 +13,7 @@ The Note Taker is an application that can be used to write, save, and delete not
 ## Installation
 - Node.JS [Version 16.18.1](https://nodejs.org/en/blog/release/v16.18.1/)
 - Express: [Express.js](https://expressjs.com/en/starter/installing.html)
-- JSON: [JSON](https://www.npmjs.com/package/json)
+- NPM packages: [NPM](https://www.npmjs.com/)
 
 ## Usage
 Open the Note Taker application and click on the Get Started button. Enter text into the 'Note Title' and 'Note Text' fields. Once a new note title and note's text are entered, a Save icon appears in the navigation at the top of the page. When the Save icon is clicked, the new note entered is saved and appears in the left-hand column with other existing notes. You can click on an existing note in the list to view and refer to the notes. To add a new note, click on the Plus icon in the navigation at the top right-hand corner of the page which will then present empty fields to enter a new note title and text. 
