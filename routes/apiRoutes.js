@@ -10,7 +10,7 @@ router.get('/api/notes', async (req, res) => {
 
 // Create POST request to receive and save new note
 router.post('/api/notes', (req, res) => {
-    const dbJson = JSON.parse(fs.readFileSync("db/db.json","utf8"));
+    const dbJson = JSON.parse(fs.readFileSync('db/db.json', 'utf-8'));
     const newNote = {
       title: req.body.title,
       text: req.body.text,
@@ -19,6 +19,7 @@ router.post('/api/notes', (req, res) => {
     dbJson.push(newNote);
     fs.writeFileSync('db/db.json',JSON.stringify(dbJson));
     res.json(dbJson);
-  });
+});
+
 
 module.exports = router;
