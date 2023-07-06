@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
+// Import api and html routes
+app.use(apiRoutes);
+app.use(htmlRoutes);
 
 app.listen(PORT, () => {
     console.log(`App server on http://localhost:${PORT}`);
